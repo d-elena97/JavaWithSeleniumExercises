@@ -25,7 +25,7 @@ public class PomTestInteractions {
         Sortable.moveFiveInList();
         Sortable.moveThreeInList();
         Sortable.moveFourInList();
-        Assert.assertEquals(Sortable.checkFirstNumber(), "Six\n" + "One\n" + "Five\n" + "Three\n" + "Four\n" + "Two"); // am scris asa pt a aparea unele sub altele
+        Assert.assertEquals(Sortable.checkNumbers(), "Six\n" + "One\n" + "Five\n" + "Three\n" + "Four\n" + "Two"); // am scris asa pt a aparea unele sub altele
         ApplicationNumberTwo.close();
 
 

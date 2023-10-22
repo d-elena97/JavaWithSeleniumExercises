@@ -1,11 +1,8 @@
 package elements;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 public class DBHandlerTests {
 
@@ -25,8 +22,8 @@ public class DBHandlerTests {
         // handle results
         while (rs.next()) {
             System.out.println(rs.getString("contactFirstName"));
-//            System.out.println(rs.getString("city"));
-//            System.out.println(rs.getString("customerNumber"));
+            System.out.println(rs.getString("city"));
+            System.out.println(rs.getString("customerNumber"));
         }
         // close connection
         con.close();
